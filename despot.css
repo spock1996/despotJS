@@ -1,0 +1,336 @@
+/* === Welcome to despotCSS the ultimat css liberi */
+
+/* Navbar with burger */
+
+/* I use font awesome 5 */
+
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha512-0S+nbAYis87iX26mmj/+fWt1MmaKCv80H+Mbo+Ne7ES4I6rxswpfnC6PxmLiw33Ywj2ghbtTw0FkLbMWqh4F7Q==" crossorigin="anonymous" /> */
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* utiliti classes */
+
+/* === border full === */
+
+.border {
+    border: 1px solid red;
+}
+
+/* === container === */
+.container-s {
+    margin: auto;
+    max-width: 480px;
+}
+
+.container-m {
+    margin: auto;
+    max-width: 960px;
+}
+
+.container-b {
+    margin: auto;
+    max-width: 1100px;
+}
+
+
+/* === background colors === */
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-gray {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.bg-dark {
+    background-color: #23232e;
+}
+
+
+.bg-black {
+    background-color: #141418;
+}
+
+
+/* === text color === */
+
+.text-gray {
+    color: #b6b6b6
+} 
+
+
+
+/* === adding display flex on element and flex === */
+
+.flex {
+    display: flex;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+
+
+/* === flex move content justify === */
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-left {
+    justify-content: flex-start;
+}
+
+.justify-right {
+    justify-content: flex-end;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+
+/* === flex move content align === */
+
+.align-center {
+    align-items: center;
+}
+
+.align-right {
+    align-items: flex-end;
+}
+
+
+/* === btn styles === */
+
+.btn-dark {
+    background-color: #23232e;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    width: 65%;
+}
+
+.btn-dark:hover {
+    background-color: #23231e;
+}
+
+
+
+  
+
+
+
+/* === navbar type 2 === */
+
+
+.navbar2 {
+    width: 15rem;
+    height: 150vh;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.1s ease-in;
+    z-index: 100;
+    
+   
+}
+
+.navbar2.toggle {
+    transform: translateX(0%);
+}
+
+.navbar-logo2 {
+    color: #fff;
+    padding: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+    
+}
+
+.navbar-logo2 a {
+    color: #fff;
+}
+
+
+
+.navbar-logo2 .logo2 {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 1rem;
+    
+}
+
+.navbar-links2 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.navbar-links2 li {
+    list-style: none;
+}
+
+
+.navbar-links2 li:first-of-type {
+    margin-top: 1rem;
+    
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1.2rem;
+    display: block;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.1);
+}
+    
+
+
+
+
+.nav-item a:hover {
+    background-color: #555;
+    
+
+}
+
+
+
+@media only screen and(max-width: 600px) {
+    .navbar2 {
+        left: 300px;
+        width: 100vh;
+        height: 4rem;
+    }
+
+
+}
+
+
+
+
+
+/* === header cover === */
+
+header {
+    background: url("./snow1.jpg") no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+
+
+.register {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    color: #fff;
+    top:50%;
+    left:50%; 
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+
+.register h2 {
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+}
+
+
+/* === scrollbar style === */
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: black
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #b6b6b6;
+}
+
+
+.text-glow {
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff,
+    0 0 120px #fff,
+    0 0 160px #fff;
+    
+}
+
+
+
+
+@media(max-height: 500px) {
+    .nav-item a {
+        padding: 0.60rem;
+        
+        
+    }
+}
+
+
+
+@media(max-height: 321px) {
+    .nav-item a {
+        padding: 0.50rem;
+        
+        
+    }
+}
+
+
+@media(max-height: 281px) {
+    .nav-item a {
+        padding: 0.30rem;
+        
+        
+    }
+}
+ 
+
